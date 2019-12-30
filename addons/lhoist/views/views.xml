@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="lhoist.list">
+      <field name="name">lhoist list</field>
+      <field name="model">lhoist.lhoist</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="lhoist.action_window">
+      <field name="name">lhoist window</field>
+      <field name="res_model">lhoist.lhoist</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="lhoist.action_server">
+      <field name="name">lhoist server</field>
+      <field name="model_id" ref="model_lhoist_lhoist"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="lhoist" id="lhoist.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="lhoist.menu_1" parent="lhoist.menu_root"/>
+    <menuitem name="Menu 2" id="lhoist.menu_2" parent="lhoist.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="lhoist.menu_1_list" parent="lhoist.menu_1"
+              action="lhoist.action_window"/>
+    <menuitem name="Server to list" id="lhoist" parent="lhoist.menu_2"
+              action="lhoist.action_server"/>
+    -->
+  </data>
+</odoo>
